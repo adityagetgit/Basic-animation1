@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cormorant+SC:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.main {
+   
+    height: 100%;
+    width: 100%;
+position: relative;
+display: flex;
+justify-content:center;
+align-items:center;
+}
+.main img{
+    height: 600px;
+    margin-top: 50px;
+    z-index: 99;
+    object-fit: cover;
+   
+}
+.utext{
+    position: absolute;
+    top: 8%;
+    /* left: 50%; */
+  z-index: 100;
+  width: 40%;
+
+}
+.utext h2{
+    color: aliceblue;
+    font-family: "Cormorant SC", serif;
+    text-align: center;
+    font-size: 38px;
+    opacity: 0.6;
+  
+}
+.text{
+    position: absolute;
+    white-space: nowrap;
+    
+    color: red;
+    top: 20%;
+    width: 100%;
+    
+overflow-x: auto;
+    overflow-y: hidden;
+}
+.text::-webkit-scrollbar{
+    display: none;
+}
+.text h1{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 150px;
+    font-family: "Cormorant SC", serif;
+    font-weight: 1000;
+    letter-spacing: 4px;
+    margin-right: 30px;
+    animation: moves 5s linear infinite ;
+    text-shadow: 2px 4px 15px white;
+}
+.text1{
+    position: absolute;
+    white-space: nowrap;
+    z-index: 100;
+    
+    top: 40%;
+    width: 100%;
+    
+overflow-x: auto;
+    overflow-y: hidden;
+}
+.text1::-webkit-scrollbar{
+    display: none;
+}
+.text1 h1{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 150px;
+    font-family: "Cormorant SC", serif;color:transparent;
+    
+    /* font-weight: 1000; */
+    animation: moves 5s linear infinite ;
+    letter-spacing: 4px;
+    margin-right: 30px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: red;
+}
+.text2{
+    position: absolute;
+    white-space: nowrap;
+    
+    color: red;
+    top: 60%;
+    width: 100%;
+    
+overflow-x: auto;
+    overflow-y: hidden;
+   
+}
+.text2::-webkit-scrollbar{
+    display: none;
+}
+.text2 h1{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 150px;
+    font-family: "Cormorant SC", serif;
+    font-weight: 1000;
+    letter-spacing: 4px;
+    margin-right: 30px;
+    animation: moves 5s linear infinite ;
+    text-shadow: 2px 4px 15px white;
+}
+@keyframes moves {
+    0%{
+         transform: translateX(calc(-100% - 30px));
+    }
+    100%{
+       transform: translateX(0%);
+    }
+}
